@@ -5,22 +5,26 @@
 
 makeCacheMatrix <- function(x = matrix()) {
   
-  # return a list of all the above functions
+  # This function returns a list of all the below functions
   m <- NULL
-  # to set the value of the matrix
+  
+  # Function to set the value of the matrix
   set <- function(y) {
     x <<- y
     m <<- NULL # since the matrix changed
   }
-  # to get the value of the matrix
+  
+  #Function to get the value of the matrix
   get <- function() x
-  # to set the inverse
+  
+  # Function to set the inverse
   setinv <- function(inv) 
   {
     print("I am in setinv")
     m <<- inv  
   }
-  # to get the inverse
+  
+  # Function to get the inverse
   getinv <- function() m
   
   #set the list
